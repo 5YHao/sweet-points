@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/ta/ta",
+    "pages/pointsMall/pointsMall",
+    "pages/addAward/addAward",
+    "pages/addMission/addMission",
+    "pages/myGetAwards/myGetAwards",
+    "pages/myGetMissions/myGetMissions",
+    "pages/changePassword/changePassword",
+    "pages/checkTaAwards/checkTaAwards",
+    "pages/checkTaMissions/checkTaMissions",
+    "pages/coupleBind/coupleBind",
+    "pages/editAward/editAward",
+    "pages/editMission/editMission",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/settings/settings"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -16,4 +16,4 @@
 
 ## **设计稿**
 
-![](D:\1_2022上学期_期末作业\Web\2020084643120 吴颖浩\project\static\images\teach\design.png)
+![](./design.png)

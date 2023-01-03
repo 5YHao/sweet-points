@@ -1,2 +1,33 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<image mode="widthFix" class="addMission" src="http://3v.gsdse.cn/sweet-points/images/float-add.png" catchtap="navToAddMision"></image>
+<view hidden="{{!haveCouple}}">
+  <image lazy-load="true" style="width:100%;" mode="widthFix" src="http://3v.gsdse.cn/sweet-points/images/home_banner.jpg"></image>
+  <image catchtap="navToPointsMall" lazy-load="true" style="display: block;width:90%;margin: 0 auto;" mode="widthFix" src="http://3v.gsdse.cn/sweet-points/images/points-mall-image.png"></image>
+
+  <view style="font-size: 34rpx;margin: 20rpx 50rpx;">任务列表</view>
+  <view hidden="{{ourMissions.length==0?true:false}}">
+    <view class="missionsContainer">
+      <view class="missionItem" wx:for="{{ourMissions}}" wx:key="id" data-iteminfo="{{item}}" bindlongpress="longPress" catchtap="onlyClick">
+        <view class="missionItem-left">
+          <image class="missionImage" mode="widthFix" src="http://3v.gsdse.cn/sweet-points/images/mission.svg"></image>
+          <view class="missionItem-left-right">
+            <view class="itemName">{{item.name}}（{{item.points}}分）</view>
+            <view class="itemDescription">{{item.description}}</view>
+          </view>
+        </view>
+
+        <customButton data-iteminfo="{{item}}" width="100rpx" fontSize="26rpx" padding="14rpx 0" letterSpacing="0em" bgColor="#ff7757" borderRadius="100000rpx" text="领取" catchtap="getMission"></customButton>
+      </view>
+    </view>
+  </view>
+
+  <view hidden="{{ourMissions.length!=0?true:false}}">
+    <view class="noMissions">双方未发布过任务</view>
+  </view>
+
+</view>
+
+<view class="noCoupleView" hidden="{{haveCouple}}">
+  <image style="width: 60vw;margin: 70rpx 0;" mode="widthFix" src="http://3v.gsdse.cn/sweet-points/images/bindimage.png"></image>
+  <customButton width="60vw" text="绑定对象" catchtap="navToBindCouple"></customButton>
+</view>

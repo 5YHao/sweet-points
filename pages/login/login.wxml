@@ -1,2 +1,6 @@
 <!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+
+<view class="loginView">
+  <image class="appicon" mode="widthFix" src="http://3v.gsdse.cn/sweet-points/images/app_icon.jpg"></image>
+  <customButton letterSpacing="0em" width="10em" borderRadius="10000rpx" bgColor="#00b26a" text="微信登录" fontWeight="bold" catchtap="wxLogin">微信登录</customButton>
+</view>

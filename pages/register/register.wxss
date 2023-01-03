@@ -1,1 +1,27 @@
 /* pages/register/register.wxss */
+page{
+  background-color: rgb(241, 241, 241);
+}
+.registerContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40rpx 40rpx;
+}
+.formTitle{
+  margin: 40rpx 0;
+}
+.avatar{
+  background-color: #ffffff;
+  border-radius: 1000000rpx;
+  margin: 0 auto;
+  width: 30%;
+}
+.gender{
+  display: flex;
+}
+.genderItem{
+  display: flex;
+  align-items: center;
+  margin-right: 30rpx;
+}

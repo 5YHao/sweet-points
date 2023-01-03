@@ -1,2 +1,21 @@
 <!--pages/myGetMissions/myGetMissions.wxml-->
-<text>pages/myGetMissions/myGetMissions.wxml</text>
+<image mode="widthFix" class="bannerImage" src="http://3v.gsdse.cn/sweet-points/images/banner3.jpeg"></image>
+<view class="container" hidden="{{myGetMissions.length==0?true:false}}">
+  <view class="awardItemBox" wx:for="{{myGetMissions}}" wx:key="index">
+    <view class="awardItemBox-left">
+      <image class="awardIcon" src="http://3v.gsdse.cn/sweet-points/images/mymission.svg"></image>
+      <view>
+        <view class="awardName">{{item.name}}</view>
+        <view class="awardDesc">{{item.description}}</view>
+        <view class="getDatetime">兑换时间：{{item.get_datetime}}</view>
+      </view>
+    </view>
+
+    <customButton data-iteminfo="{{item}}" fontSize="26rpx" wx:if="{{item.status==0?true:false}}" data-iteminfo="{{item}}" catchtap="giveup" text="放弃" bgColor="#8a8a8a" width="4em"></customButton>
+    <customButton fontSize="26rpx" bgColor="#FFA178" wx:if="{{item.status==1?true:false}}" width="4em" text="已完成"></customButton>
+
+  </view>
+</view>
+<view class="noShowData" hidden="{{myGetMissions.length!=0?true:false}}">
+  您未领取过任务
+</view>

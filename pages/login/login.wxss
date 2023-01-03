@@ -1,1 +1,13 @@
 /* pages/login/login.wxss */
+
+.loginView {
+  margin-top: 100rpx;
+}
+
+.appicon {
+  display: block;
+  margin: auto;
+  margin-bottom: 90rpx;
+  width: 30%;
+  border-radius: 100000rpx;
+}

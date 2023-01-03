@@ -1,2 +1,18 @@
 <!--pages/checkTaAwards/checkTaAwards.wxml-->
-<text>pages/checkTaAwards/checkTaAwards.wxml</text>
+<image class="bannerImage" mode="widthFix" src="http://3v.gsdse.cn/sweet-points/images/getaward_banner.jpeg"></image>
+
+<view hidden="{{showList.length==0?true:false}}" class="container">
+  <view class="itemBox" wx:for="{{showList}}" wx:key="index">
+    <view class="itemBox_left">
+      <image class="awardIcon" src="http://3v.gsdse.cn/sweet-points/images/award.svg"></image>
+      <view class="itemBox_left_right">
+        <view class="name">{{item.name}}</view>
+        <view class="desc">{{item.description}}</view>
+      </view>
+
+    </view>
+    <customButton data-iteminfo="{{item}}" text="完成" width="3em" catchtap="finishConfirm"></customButton>
+
+  </view>
+</view>
+<view hidden="{{showList.length!=0?true:false}}" class="noTaGetAwards">TA没有申请兑现的奖品</view>

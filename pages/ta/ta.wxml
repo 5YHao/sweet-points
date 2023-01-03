@@ -1,2 +1,24 @@
 <!--pages/ta/ta.wxml-->
-<text>pages/ta/ta.wxml</text>
+<view class="noCouplePage" hidden="{{haveCouple}}">
+  您未绑定对象
+</view>
+<view hidden="{{!haveCouple}}" class="userInfo">
+  <view class="pointsBox">
+  <image class="pointsIcon" src="http://3v.gsdse.cn/sweet-points/images/points.svg"></image>
+  <view>{{userInfo.points}}</view>
+</view>
+  <view class="userInfo_head">
+    <image class="avatar" mode="widthFix" src="{{avatar}}"></image>
+    <image mode="widthFix" class="genderImage" wx:if="{{userInfo.gender=='男'?true:false}}" src="http://3v.gsdse.cn/sweet-points/images/boy_gender.svg"></image>
+    <image mode="widthFix" class="genderImage" wx:if="{{userInfo.gender=='女'?true:false}}" src="http://3v.gsdse.cn/sweet-points/images/girl_gender.svg"></image>
+  </view>
+  <view class="username">{{userInfo.username}}</view>
+
+  <view class="choiseContainer">
+  <view wx:for="{{choises}}" wx:key="index" data-iteminfo="{{item}}" class="choiseItem" bindtap="clickChoise">
+    <image mode="widthFix" class="icon" src="{{item.src}}"></image>
+    <view>{{item.title}}</view>
+  </view>
+</view>
+</view>
+

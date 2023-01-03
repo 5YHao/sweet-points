@@ -1,2 +1,7 @@
 <!--pages/settings/settings.wxml-->
-<text>pages/settings/settings.wxml</text>
+<view class="choisesBox">
+  <view class="choiseItem" catchtap="break">
+    <image class="choiseIcon" src="http://3v.gsdse.cn/sweet-points/images/break.svg" mode="widthFix"></image>
+    <text>解绑对象</text>
+  </view>
+</view>

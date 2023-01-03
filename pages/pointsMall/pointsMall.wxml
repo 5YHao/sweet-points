@@ -1,2 +1,22 @@
 <!--pages/pointsMall/pointsMall.wxml-->
-<text>pages/pointsMall/pointsMall.wxml</text>
+<image class="addAward" mode="widthFix" src="http://3v.gsdse.cn/sweet-points/images/add.svg" catchtap="addAward"></image>
+<view hidden="{{awards.length==0?true:false}}">
+  <view class="awardBox" wx:for="{{awards}}" wx:key="index" data-iteminfo="{{item}}" bindlongpress="longPress" catchtap="onlyClick">
+    <view class="awardBox_left">
+      <image class="awardIcon" src="http://3v.gsdse.cn/sweet-points/images/award.svg" mode="widthFix"></image>
+      <view>
+        <view class="awardName">{{item.name}}</view>
+        <view class="awardPrice">
+          <image mode="widthFix" class="pointsIcon" src="http://3v.gsdse.cn/sweet-points/images/points.svg"></image>
+          <text style="margin-left: 10rpx;">{{item.price}}</text>
+        </view>
+        <view class="publish_datetime">{{item.publish_datetime}}</view>
+      </view>
+    </view>
+    <customButton data-iteminfo="{{item}}" text="兑换" bgColor="#f87a0f" width="4em" borderRadius="10rpx" fontSize="26rpx" catchtap="exchange"></customButton>
+  </view>
+</view>
+
+<view hidden="{{awards.length!=0?true:false}}">
+  <view class="noAwards" >双方未发布过奖品</view>
+</view>

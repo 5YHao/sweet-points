@@ -1,1 +1,40 @@
 /* pages/coupleBind/coupleBind.wxss */
+page{
+  box-sizing: border-box;
+  padding: 5vw;
+}
+
+.resultBox{
+  border-radius: 20rpx;
+  padding: 20rpx;
+  background-color: rgb(236, 236, 236);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40rpx;
+  }
+
+.avatarAndGender{
+  position: relative;
+}
+
+.avatarImage{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #ffffff;
+  border-radius: 1000000rpx;
+}
+.genderImage{
+  position: absolute;
+  bottom: -10rpx;
+  right: -20rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.resultUserame{
+margin-left: 40rpx;
+}
+.resultBox-left{
+  display: flex;
+  align-items: center;
+}

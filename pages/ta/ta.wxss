@@ -1,1 +1,99 @@
-/* pages/ta/ta.wxss */
+/* pages/mine/mine.wxss */
+page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: rgb(238, 238, 238);
+  padding-top: 40rpx;
+}
+.noCouplePage{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.avatar {
+  width: 20vw;
+  height: 20vw;
+  background-color: #ffffff;
+  border-radius: 100000px;
+}
+
+.userInfo_head {
+  width: 20%;
+  position: relative;
+}
+
+.username {
+  margin-top: 20rpx;
+  font-size: 36rpx;
+}
+
+.genderImage {
+  z-index: 10000;
+  position: absolute;
+  bottom: 0rpx;
+  right: -20rpx;
+  display: block;
+  width: 50rpx;
+}
+
+.userInfo {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pointsBox {
+  position: absolute;
+  right: 0;
+  top: 40rpx;
+  background-color: #ffffff;
+  padding: 20rpx;
+  border-radius: 100000rpx 0 0 100000rpx;
+  display: flex;
+  align-items: center;
+  color: #ff7947;
+  font-weight: bold;
+}
+
+.pointsIcon {
+  width: 1.3em;
+  height: 1.3em;
+  margin-right: 10rpx;
+}
+
+.icon {
+  display: block;
+  width: 1.8em;
+  margin-right: 30rpx;
+}
+
+.choiseContainer {
+  margin-top: 40rpx;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 40rpx;
+  width: 100vw;
+  box-sizing: border-box;
+  border-radius: 10rpx 10rpx 0 0;
+  background-color: #ffffff;
+}
+
+.choiseItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #e2efff;
+  padding: 24rpx;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+}

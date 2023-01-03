@@ -1,1 +1,70 @@
 /* pages/pointsMall/pointsMall.wxss */
+page {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: rgb(233, 233, 233);
+}
+
+.addAward {
+  position: fixed;
+  bottom: 300rpx;
+  right: 30rpx;
+  width: 16vw;
+}
+
+.awardBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20rpx;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 10rpx;
+  border-radius: 10rpx;
+}
+
+.awardBox_left {
+  display: flex;
+  align-items: center;
+}
+
+.noAwards {
+  width: 100vw;
+  color: #686868;
+  text-align: center;
+  margin-top: 40rpx;
+}
+
+.awardIcon {
+  width: 5em;
+}
+
+.awardName {
+  font-size: 34rpx;
+}
+
+.pointsIcon {
+  width: 1em;
+  display: block;
+}
+
+.awardPrice {
+  font-weight: bold;
+  color: #faa054;
+  display: flex;
+  align-items: center;
+  font-size: 34rpx;
+}
+
+.awardDesc {
+  height: 2.5em;
+  color: #8b8b8b;
+}
+
+.publish_datetime {
+  font-size: 24rpx;
+  color: #7c7c7c;
+}

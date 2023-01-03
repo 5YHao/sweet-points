@@ -1,19 +1,21 @@
 // app.js
+const http = require('./http/http');
 App({
-  onLaunch() {
-    // 展示本地存储能力
-    const logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
-  },
+  //全局数据
   globalData: {
-    userInfo: null
-  }
+    userInfo: null,
+    coupleInfo: null,
+    baseUrl: http.baseUrl,
+  },
+  //用于页面跳转参数传递
+  tmpdata:null,
+  httpRequest: http.httpRequest,
+  httpUploadFile:http.httpUploadFile,
+
+
+  onLaunch() {
+
+
+  },
+
 })

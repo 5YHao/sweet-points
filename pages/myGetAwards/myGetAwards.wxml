@@ -1,2 +1,22 @@
 <!--pages/myGetAwards/myGetAwards.wxml-->
-<text>pages/myGetAwards/myGetAwards.wxml</text>
+<image mode="widthFix" class="bannerImage" src="http://3v.gsdse.cn/sweet-points/images/awardwardhouse.png"></image>
+<view class="container" hidden="{{myGetAwards.length==0?true:false}}">
+  <view class="awardItemBox" wx:for="{{myGetAwards}}" wx:key="index">
+    <view class="awardItemBox-left">
+      <image class="awardIcon" src="http://3v.gsdse.cn/sweet-points/images/aah-award.svg"></image>
+      <view>
+        <view class="awardName">{{item.name}}</view>
+        <view class="awardDesc">{{item.description}}</view>
+        <view class="getDatetime">兑换时间：{{item.get_datetime}}</view>
+      </view>
+    </view>
+
+    <customButton fontSize="26rpx" wx:if="{{item.status==0?true:false}}" data-iteminfo="{{item}}" catchtap="consume" text="兑现" bgColor="#fc5531" width="4em"></customButton>
+    <customButton fontSize="26rpx" bgColor="#FFA178" wx:if="{{item.status==1?true:false}}" width="4em" text="申请中"></customButton>
+    <customButton fontSize="26rpx" bgColor="#bfbfbf" wx:if="{{item.status==2?true:false}}" width="4em" text="已兑现"></customButton>
+  </view>
+</view>
+
+<view class="noShowData" hidden="{{myGetAwards.length!=0?true:false}}">
+  您未兑换过奖品
+</view>

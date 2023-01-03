@@ -1,2 +1,12 @@
-<!--pages/editMission/editMission.wxml-->
-<text>pages/editMission/editMission.wxml</text>
+
+<view>任务名称</view>
+<input value="{{itemInfo.name}}" bindinput="nameInput" class="myInput" type="text" name="" id="" />
+<view>任务描述</view>
+<textarea value="{{itemInfo.description}}" bindinput="descInput" class="myInput" class="myInput" type="text" name="" id="" />
+<view>任务分值</view>
+<slider value="{{itemInfo.points}}" backgroundColor="#c4c4c4"  style="margin: 40rpx 0;padding-left: 40rpx ;" bindchange="sliderChange" show-value step="1" min="1" max="100" />
+
+<view class="bottom">
+  <customButton text="保存" catchtap="save"></customButton>
+</view>
+

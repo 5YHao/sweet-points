@@ -1,1 +1,57 @@
 /* pages/myGetMissions/myGetMissions.wxss */
+page {
+  background-color: rgb(238, 238, 238);
+}
+
+.bannerImage {
+  width: 100vw;
+}
+
+.container {
+  padding: 20rpx 40rpx;
+  padding-bottom: 200rpx;
+}
+
+.awardItemBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  margin-bottom: 5rpx;
+  padding: 30rpx 30rpx 30rpx 10rpx;
+}
+
+.awardItemBox-left {
+  display: flex;
+  align-items: center;
+}
+
+.awardIcon {
+  margin-right: 20rpx;
+  display: block;
+  width: 4em;
+  height: 4em;
+}
+
+.awardDesc {
+  color: #777777;
+  font-size: 24rpx;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.getDatetime {
+  font-size: 24rpx;
+  color: #7c7c7c;
+}
+
+.noShowData {
+  margin-top: 40rpx;
+  color: #727272;
+  display: flex;
+  justify-content: center;
+}

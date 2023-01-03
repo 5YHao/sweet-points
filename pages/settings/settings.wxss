@@ -1,1 +1,26 @@
 /* pages/settings/settings.wxss */
+page{
+  width: 100vw;
+  height: 100vw;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 40rpx;
+  background-color: rgb(238, 238, 238);
+}
+.choisesBox{
+  width: 100%;
+  border-radius: 20rpx;
+}
+.choiseItem{
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.choiseIcon{
+  width: 1.5em;
+  margin-right: 25rpx;
+}

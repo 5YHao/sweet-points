@@ -1,2 +1,11 @@
 <!--pages/addAward/addAward.wxml-->
-<text>pages/addAward/addAward.wxml</text>
+<view>奖品名称</view>
+<input bindinput="nameInput" class="myInput" type="text" name="" id="" />
+<view>奖品描述</view>
+<textarea bindinput="descInput" class="myInput" class="myInput" type="text" name="" id="" />
+<view>所需积分</view>
+<slider backgroundColor="#c4c4c4"  style="margin: 40rpx 0;padding-left: 40rpx ;" bindchange="sliderChange" show-value step="1" min="1" max="100" />
+
+<view class="bottom">
+  <customButton text="确认添加" catchtap="addAward"></customButton>
+</view>

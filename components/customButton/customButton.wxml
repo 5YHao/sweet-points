@@ -1,0 +1,4 @@
+<!--components/customButton/customButton.wxml-->
+<view class="fatherBox" style="padding:{{padding}};border-radius: {{borderRadius}};background-color: {{bgColor}};width: {{width}};color: {{textColor}};font-weight: {{fontWeight}};font-size: {{fontSize}};letter-spacing: {{letterSpacing}};">
+	<view>{{text}}</view>
+</view>

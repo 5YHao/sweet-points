@@ -1,2 +1,12 @@
 <!--pages/addMission/addMission.wxml-->
-<text>pages/addMission/addMission.wxml</text>
+<view>任务名称</view>
+<input bindinput="nameInput" class="myInput" type="text" name="" id="" />
+<view>任务描述</view>
+<textarea bindinput="descInput" class="myInput" class="myInput" type="text" name="" id="" />
+<view>任务分值</view>
+<slider backgroundColor="#c4c4c4"  style="margin: 40rpx 0;padding-left: 40rpx ;" bindchange="sliderChange" show-value step="1" min="1" max="100" />
+
+<view class="bottom">
+  <customButton text="确认添加" catchtap="addMission"></customButton>
+</view>
+

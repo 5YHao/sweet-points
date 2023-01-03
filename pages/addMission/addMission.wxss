@@ -1,1 +1,16 @@
 /* pages/addMission/addMission.wxss */
+page {
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 40rpx;
+  background-color: #eeeeee;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 40rpx 80rpx 40rpx
+}

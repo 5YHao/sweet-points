@@ -1,2 +1,20 @@
 <!--pages/register/register.wxml-->
-<text>pages/register/register.wxml</text>
+
+<view class="registerContainer">
+  <image class="avatar" mode="widthFix" src="{{avatarImageInfo.tempFilePath}}" catchtap="chooseIamge"></image>
+  <view>
+    <view class="formTitle">用户名</view>
+    <input class="myInput" type="text" bindinput="usernameInput" />
+    <view class="formTitle">性别（一旦绑定不可修改）</view>
+    <radio-group class="gender" bindchange="radioChange">
+      <view class="genderItem" wx:for="{{radioItems}}" wx:key="index">
+        <radio id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}"></radio>
+        <label for="{{item.name}}"><text>{{item.name}}</text></label>
+      </view>
+    </radio-group>
+  </view>
+  <view style="margin-top: 70rpx;">
+    <customButton text="完成注册" fontWeight="bold" catchtap="save"></customButton>
+  </view>
+
+</view>

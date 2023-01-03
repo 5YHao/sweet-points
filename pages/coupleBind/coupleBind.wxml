@@ -1,2 +1,21 @@
 <!--pages/coupleBind/coupleBind.wxml-->
-<text>pages/coupleBind/coupleBind.wxml</text>
+<view style="display: flex;align-items: center;justify-content: space-between;">
+  <input bindinput="usernameInput" style="display: block;width: 60vw;" placeholder="用户名搜索" class="myInput" type="text" />
+  <customButton width="20vw" text="查找" catchtap="searchUser"></customButton>
+</view>
+
+<view wx-if="{{resultUserInfo!=null?true:false}}">
+  <view style="margin-top:20rpx">查找结果</view>
+  <view class="resultBox">
+    <view class="resultBox-left">
+      <view class="avatarAndGender">
+        <image class="avatarImage" src="{{avatarUrl!=null? avatarUrl:'http://3v.gsdse.cn/sweet-points/images/default-avatar.svg'}}" />
+        <image wx:if="{{resultUserInfo.gender=='男'?true:false}}" class="genderImage" src="http://3v.gsdse.cn/sweet-points/images/boy_gender.svg"></image>
+        <image wx:if="{{resultUserInfo.gender=='女'?true:false}}" class="genderImage" src="http://3v.gsdse.cn/sweet-points/images/girl_gender.svg"></image>
+      </view>
+
+      <view class="resultUserame">{{resultUserInfo.username}}</view>
+    </view>
+    <customButton width="20vw" text="绑定" bgColor="#00b26a" catchtap="bindCouple"></customButton>
+  </view>
+</view>

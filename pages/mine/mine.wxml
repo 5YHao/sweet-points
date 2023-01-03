@@ -1,2 +1,21 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="pointsBox">
+  <image class="pointsIcon" src="http://3v.gsdse.cn/sweet-points/images/points.svg"></image>
+  <view>{{userInfo.points}}</view>
+</view>
+<view class="userInfo">
+  <view class="userInfo_head">
+    <image class="avatar" mode="widthFix" src="{{avatar!=null?avatar:'http://3v.gsdse.cn/sweet-points/images/default-avatar.svg'}}"></image>
+    <image mode="widthFix" class="genderImage" wx:if="{{userInfo.gender=='男'?true:false}}" src="http://3v.gsdse.cn/sweet-points/images/boy_gender.svg"></image>
+    <image mode="widthFix" class="genderImage" wx:if="{{userInfo.gender=='女'?true:false}}" src="http://3v.gsdse.cn/sweet-points/images/girl_gender.svg"></image>
+  </view>
+  <view class="username">{{userInfo.username}}</view>
+
+</view>
+<view class="choiseContainer">
+  <view wx:for="{{choises}}" wx:key="index" data-iteminfo="{{item}}" class="choiseItem" bindtap="clickChoise">
+    <image mode="widthFix" class="icon" src="{{item.src}}"></image>
+    <view>{{item.title}}</view>
+  </view>
+</view>
+<view style="position: absolute;bottom: 40rpx;display: flex;justify-content: center;width: 100vw;color: #999999;">很甜的积分 v1.0</view>

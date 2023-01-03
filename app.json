@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/index/index",
     "pages/mine/mine",
     "pages/ta/ta",
@@ -8,13 +9,12 @@
     "pages/addMission/addMission",
     "pages/myGetAwards/myGetAwards",
     "pages/myGetMissions/myGetMissions",
-    "pages/changePassword/changePassword",
     "pages/checkTaAwards/checkTaAwards",
     "pages/checkTaMissions/checkTaMissions",
     "pages/coupleBind/coupleBind",
     "pages/editAward/editAward",
     "pages/editMission/editMission",
-    "pages/login/login",
+
     "pages/register/register",
     "pages/settings/settings"
   ],
@@ -23,6 +23,24 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "./tabbar-icon/ic-left-tab-normal.png",
+      "selectedIconPath": "./tabbar-icon/ic-left-tab-active.png"
+    }, {
+      "pagePath": "pages/ta/ta",
+      "text": "TA",
+      "iconPath": "./tabbar-icon/ic-middle-tab-normal.png",
+      "selectedIconPath": "./tabbar-icon/ic-middle-tab-active.png"
+    },{
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "./tabbar-icon/ic-right-tab-normal.png",
+      "selectedIconPath": "./tabbar-icon/ic-right-tab-active.png"
+    }]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

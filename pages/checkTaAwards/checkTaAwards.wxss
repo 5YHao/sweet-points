@@ -1,1 +1,48 @@
 /* pages/checkTaAwards/checkTaAwards.wxss */
+page {
+  background-color: rgb(238, 238, 238);
+
+}
+
+.container {
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.bannerImage {
+  display: block;
+  width: 100%;
+}
+
+.noTaGetAwards {
+  margin-top: 40rpx;
+  color: #727272;
+  display: flex;
+  justify-content: center;
+}
+
+.itemBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 40rpx 20rpx 20rpx;
+  background-color: #ffffff;
+  margin-bottom: 10rpx;
+}
+
+.itemBox_left {
+  display: flex;
+  align-items: center;
+}
+.itemBox_left_right{
+  margin-left: 20rpx;
+}
+.desc{
+  color: #727272;
+}
+.awardIcon {
+  width: 4em;
+  height: 4em;
+}

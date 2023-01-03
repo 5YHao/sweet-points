@@ -1,1 +1,73 @@
 /* pages/index/index.wxss */
+
+.missionsContainer {
+  padding: 30rpx;
+  background: #ffffff;
+  padding: 20rpx 40rpx;
+}
+
+.missionItem {
+  box-sizing: border-box;
+  height: 140rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  border: 2rpx solid #e6e6e6;
+  padding: 0 20rpx;
+}
+
+.missionImage {
+  width: 25%;
+}
+
+.itemName {
+  font-size: 28rpx;
+}
+
+.itemDescription {
+  color: #777777;
+  font-size: 24rpx;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.missionItem-left {
+  height: 100%;
+  flex: 1;
+  height: 0%;
+  display: flex;
+  align-items: center;
+}
+
+.missionItem-left-right {
+  width: 100%;
+  padding: 10rpx 20rpx;
+}
+
+.noCoupleView {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.noMissions {
+  display: flex;
+  justify-content: center;
+  margin-top: 40rpx;
+  color: #8a8a8a;
+}
+
+.addMission{
+  position: fixed;
+  width: 11vw;
+  bottom: 100rpx;
+  right: 40rpx;
+}

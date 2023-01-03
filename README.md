@@ -17,3 +17,7 @@
 ## **设计稿**
 
 ![](./design.png)
+
+## 扫码体验
+
+<img src="./QRCode.jpg" style="width:200px;" align="left" />

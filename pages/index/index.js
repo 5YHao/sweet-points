@@ -6,20 +6,8 @@ Page({
   data: {
     ourMissions: [],
     haveCouple: false,
-
   },
   //=========【方法定义区】(类比Vue实例中的methods)==========
-  async requestOurMissions(publisher_id) {
-    console.log("【请求】ourMissions");
-    let url = app.globalData.baseUrl + "selectMissionsByPublisherId";
-    let method = "POST";
-    let data = {
-      publisher_id
-    };
-    let result = await app.httpRequest(url, method, data);
-    console.log(result);
-  },
-
   async getCoupleInfo() {
     let that = this;
     wx.showLoading({
@@ -223,7 +211,12 @@ Page({
    * 生命周期函数--页面显示时执行
    */
   onShow() {
+
+    console.log(this.data.test);
+
     this.getCoupleInfo();
+
+
   },
 
   /**
